@@ -2,7 +2,7 @@
 $content-width: 1170px;
 
 // Fonts and sizes
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $primary-text-color: #000000;
 
 html {
@@ -11,9 +11,32 @@ html {
 	line-height: 1;
 }
 
+.motion-loading .iphonePreview {
+	opacity: 0;
+	transform: translateY(14px);
+}
+
+.motion-loading .appInfo > *,
+.motion-loading .feature {
+	opacity: 0;
+	transform: translateY(10px);
+}
+
+.motion-loading .markdown-body > * {
+	opacity: 0;
+	transform: translateY(8px);
+}
+
 body {
 	font-size: 2rem;
 	background-color: $body-color;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: $font;
 }
 
 .subPageBody {

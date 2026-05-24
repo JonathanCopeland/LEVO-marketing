@@ -1,13 +1,24 @@
 .imageWrapper {					// Sets the background in the header area
 	height: 714px;
 	background-color: $cover-background-color;
-	border-radius: 0px 0px 40px 40px;
 
 }
 
 .headerBackground {
+	position: relative;
 	height: 115px;
-	background-color: rgba($header-color, $header-transparency);
+}
+
+.headerBackground::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	height: 1px;
+	background-color: rgba(#111, 0.08);
+	pointer-events: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -68,7 +79,7 @@
 .page {
 	margin-top: 30px;
 	margin-bottom: 70px;
-	grid-column: 3/11;
+	grid-column: 1/-1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -117,10 +128,17 @@ header {
 } 
 
 .headerIcon {
+	display: block;
 	width: 50px;
 	height: 50px;
 	-webkit-clip-path: url(#shape);
 	clip-path: url(#shape);
+}
+
+.appIconShadow > a {
+	display: flex;
+	width: 50px;
+	height: 50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -326,7 +344,6 @@ nav > ul li a:active {
 .downloadButtonsContainer {
 	display: inline-block;
 	margin-top: 42px;
-	filter: $drop-shadow;
 }
 
 @media only screen and (max-width: 992px) {
@@ -340,6 +357,7 @@ nav > ul li a:active {
 .playStore {
 	height: 75px;
 	margin-right: 24px;
+	filter: $drop-shadow;
 }
 
 @media only screen and (max-width: 992px) {
@@ -362,6 +380,7 @@ nav > ul li a:active {
 
 .appStore {
 	height: 75px;
+	filter: $drop-shadow;
 }
 
 .storeStatus {
@@ -372,11 +391,12 @@ nav > ul li a:active {
 	padding: 0 24px;
 	border: 1px solid rgba(17, 17, 17, 0.18);
 	border-radius: 8px;
-	background-color: rgba(17, 17, 17, 0.04);
+	background-color: #fff;
 	color: rgba(17, 17, 17, 0.92);
 	font-size: 1.7rem;
-	font-weight: 700;
+	font-weight: 600;
 	backdrop-filter: blur(16px);
+	transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
 .storeStatus:link,
@@ -385,6 +405,18 @@ nav > ul li a:active {
 .storeStatus:active {
 	color: rgba(17, 17, 17, 0.92);
 	text-decoration: none;
+}
+
+.storeStatus:hover {
+	border-color: rgba(17, 17, 17, 0.28);
+	background-color: rgba(255, 255, 255, 0.82);
+	transform: translateY(-1px);
+}
+
+.storeStatus:active {
+	border-color: rgba(17, 17, 17, 0.22);
+	background-color: #fff;
+	transform: translateY(0px) scale(0.99);
 }
 
 
@@ -498,7 +530,7 @@ nav > ul li a:active {
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	margin-top: 93px;
+	margin-top: 120px;
 }
 
 .feature {
@@ -581,7 +613,7 @@ nav > ul li a:active {
 		flex-grow: 1;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-top: 11px;
+		margin-top: 36px;
 	}
 
 	.feature {
@@ -616,7 +648,7 @@ nav > ul li a:active {
 		flex-grow: 1;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-top: 11px;
+		margin-top: 36px;
 	}
 
 	.feature {
@@ -654,6 +686,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 48px;
 }
 
 .footerText {
@@ -675,7 +708,7 @@ footer {
 }
 
 .footerLinks {
-	display: flex;
+	display: none;
 	text-align: center;
 	padding-bottom: 70px;
 }

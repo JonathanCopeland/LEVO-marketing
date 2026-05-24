@@ -27,6 +27,24 @@ bundle exec jekyll serve
 
 Update `screenshot_path`, `device_image`, and `device_mask` in `_config.yml` when final App Store imagery is ready.
 
+## Press Kit
+
+Add a downloadable press kit ZIP under `assets/presskit/`, then set `presskit_download_link` in `_config.yml` to that relative path. Once set, the Press Kit link appears in the header and footer.
+
+A useful first press kit should include:
+
+- App icon as a large PNG
+- 3-5 current screenshots
+- A short product description
+- Contact email
+- TestFlight or App Store link
+
+Suggested path:
+
+```yml
+presskit_download_link: assets/presskit/VERSO-press-kit.zip
+```
+
 ## Credits
 
 Built from the Automatic App Landing Page Jekyll theme.

@@ -242,7 +242,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 .markdown-body code,
 .markdown-body kbd,
 .markdown-body pre {
-  font-family: monospace,monospace;
+  font-family: $font;
   font-size: 1em;
 }
 
@@ -406,7 +406,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 
 .markdown-body code,
 .markdown-body pre {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: $font;
   font-size: 12px;
 }
 
@@ -765,7 +765,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 .markdown-body .commit-tease-sha {
   color: #444d56;
   display: inline-block;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: $font;
   font-size: 90%;
 }
 
@@ -787,7 +787,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
   -webkit-user-select: none;
   color: rgba(27,31,35,.3);
   cursor: pointer;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: $font;
   font-size: 12px;
   line-height: 20px;
   min-width: 50px;
@@ -818,7 +818,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 
 .markdown-body .blob-code-inner {
   color: #24292e;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: $font;
   font-size: 12px;
   overflow: visible;
   white-space: pre;
@@ -839,7 +839,8 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
   box-shadow: inset 0 -1px 0 #c6cbd1;
   color: #444d56;
   display: inline-block;
-  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-family: $font;
+  font-size: 11px;
   line-height: 10px;
   padding: 3px 5px;
   vertical-align: middle;
