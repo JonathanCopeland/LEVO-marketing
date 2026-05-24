@@ -6,8 +6,11 @@
 <body>
     <div class="imageWrapper">
             <div class="headerBackground">
-                <div class="container">
+                <div class="container headerContainer">
                     {% include header.html %}
+                </div>
+            </div>
+            <div class="container heroContainer">
                     <div class="iphonePreview">
 
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 0 0" style="position: absolute;">
@@ -69,13 +72,14 @@
                             {% endif %}
                         </div>
                     </div>
-                    {% include features.html %}
-                    {% include footer.html %}
-                    {% include appstoreimages.html %}
-                    {% include feathericons.html %}
-                    {% include motion.html %}
-                </div>
             </div>
         </div>
+    <div class="container contentContainer">
+        {% include features.html %}
+        {% include footer.html %}
+    </div>
+    {% include appstoreimages.html %}
+    {% include feathericons.html %}
+    {% include motion.html %}
 </body>
 </html>

@@ -1,5 +1,4 @@
 .imageWrapper {					// Sets the background in the header area
-	height: 714px;
 	background-color: $cover-background-color;
 
 }
@@ -17,11 +16,15 @@
 	bottom: 0;
 	z-index: 1;
 	height: 1px;
-	background-color: rgba(#111, 0.08);
+	background-color: rgba(#242424, 0.08);
 	pointer-events: none;
 }
 
 @media only screen and (max-width: 768px) {
+
+	body {
+		font-size: 1.8rem;
+	}
 
 	.headerBackground {
 		height: 80px;
@@ -63,10 +66,6 @@
 
 @media only screen and (max-width: 992px) {
 
-	.imageWrapper {
-		height: 1090px;
-	}
-
 	.container {
 		grid-column-gap: 0px;
 		grid-template-columns: 1;
@@ -78,6 +77,46 @@
 			"c c c c c c c c c c c c"
 			"f f f f f f f f f f f f";
 	}
+}
+
+.headerContainer {
+	grid-template-rows: 115px;
+	grid-template-areas: 
+		"h h h h h h h h h h h h";
+}
+
+.heroContainer {
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"p p p p p i i i i i i i";
+	padding-bottom: 84px;
+}
+
+.contentContainer {
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+		"c c c c c c c c c c c c"
+		"f f f f f f f f f f f f";
+}
+
+@media only screen and (max-width: 768px) {
+
+	.headerContainer {
+		grid-template-rows: 80px;
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+	.heroContainer {
+		grid-template-rows: auto auto;
+		grid-template-areas: 
+			"p p p p p p p p p p p p"
+			"i i i i i i i i i i i i";
+		padding-bottom: 84px;
+	}
+
 }
 
 .page {
@@ -126,6 +165,7 @@ header .appIconShadow {
 
 	.logo {
 		height: 80px;
+		flex: 0 0 auto;
 		margin-right: 0px;
 	}
 
@@ -137,16 +177,16 @@ header .appIconShadow {
 
 .headerIcon {
 	display: block;
-	width: 36px;
-	height: 36px;
+	width: 28px;
+	height: 28px;
 	-webkit-clip-path: url(#shape);
 	clip-path: url(#shape);
 }
 
 .appIconShadow > a {
 	display: flex;
-	width: 36px;
-	height: 36px;
+	width: 28px;
+	height: 28px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -179,6 +219,8 @@ header .appIconShadow {
 
 	.scroll {
 		height: 80px;
+		min-width: 0px;
+		margin-left: 16px;
 		padding-top: 100px;
 		padding-bottom: 100px;
 		margin-top: -60px;
@@ -206,7 +248,24 @@ nav > ul li {
 @media only screen and (max-width: 768px) {
 
 	nav > ul li {
-		padding-left: 20px;
+		padding-left: 16px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	nav > ul li:first-child {
+		padding-left: 0px;
+	}
+
+	nav > ul li:last-child {
+		padding-right: 0px;
+	}
+
+	nav > ul li a:link,
+	nav > ul li a:visited {
+		font-size: 1.55rem;
 	}
 
 }
@@ -223,30 +282,30 @@ nav > ul li:last-child {
 nav > ul li a:link,
 nav > ul li a:visited {
 	text-decoration: none;
-	color: rgba($header-title-color, 0.6);
+	color: #707070;
 }
 
 nav > ul li a:hover,
 nav > ul li a:active {
 	text-decoration: none;
-	color: rgba($header-title-color, 1);
+	color: $header-title-color;
 }
 
 
 
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {
-	color: #000;
+	color: #242424;
 }
 
 .subPageHeaderBackground nav > ul li a:link,
 .subPageHeaderBackground nav > ul li a:visited {
-	color: rgba(#000, 0.6);
+	color: #707070;
 }
 
 .subPageHeaderBackground nav > ul li a:hover,
 .subPageHeaderBackground nav > ul li a:active {
-	color: rgba(#000, 1);
+	color: #242424;
 }
 
 
@@ -330,6 +389,21 @@ nav > ul li a:active {
 	
 } 
 
+@media only screen and (max-width: 768px) {
+
+	.appName {
+		font-size: 2.45rem;
+		line-height: 1.12;
+	}
+
+	.appPrice {
+		font-size: 1.75rem;
+		line-height: 1.25;
+		margin-top: 10px;
+	}
+
+}
+
 .appDescriptionContainer {
 	font-size: 2.5rem;
 	font-weight: normal;
@@ -360,6 +434,16 @@ nav > ul li a:active {
 	
 } 
 
+@media only screen and (max-width: 768px) {
+
+	.appDescriptionContainer {
+		font-size: 2.05rem;
+		line-height: 1.45;
+		margin-top: 36px;
+	}
+
+}
+
 .downloadButtonsContainer {
 	display: inline-block;
 	margin-top: 42px;
@@ -372,6 +456,19 @@ nav > ul li a:active {
 	}
 	
 } 
+
+@media only screen and (max-width: 768px) {
+
+	.downloadButtonsContainer {
+		margin-top: 34px;
+	}
+
+	.storeStatus {
+		min-height: 50px;
+		font-size: 1.55rem;
+	}
+
+}
 
 .playStore {
 	height: 75px;
@@ -408,10 +505,10 @@ nav > ul li a:active {
 	justify-content: center;
 	min-height: 54px;
 	padding: 0 24px;
-	border: 1px solid rgba(17, 17, 17, 0.18);
+	border: 1px solid rgba(36, 36, 36, 0.18);
 	border-radius: 8px;
 	background-color: #fff;
-	color: rgba(17, 17, 17, 0.92);
+	color: #242424;
 	font-size: 1.7rem;
 	font-weight: 600;
 	backdrop-filter: blur(16px);
@@ -422,18 +519,18 @@ nav > ul li a:active {
 .storeStatus:visited,
 .storeStatus:hover,
 .storeStatus:active {
-	color: rgba(17, 17, 17, 0.92);
+	color: #242424;
 	text-decoration: none;
 }
 
 .storeStatus:hover {
-	border-color: rgba(17, 17, 17, 0.28);
+	border-color: rgba(36, 36, 36, 0.28);
 	background-color: rgba(255, 255, 255, 0.82);
 	transform: translateY(-1px);
 }
 
 .storeStatus:active {
-	border-color: rgba(17, 17, 17, 0.22);
+	border-color: rgba(36, 36, 36, 0.22);
 	background-color: #fff;
 	transform: translateY(0px) scale(0.99);
 }
@@ -556,13 +653,58 @@ nav > ul li a:active {
 	
 } 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
+
+	.iphonePreview {
+		width: 225px;
+		height: 460px;
+		margin-top: 34px;
+		margin-bottom: 28px;
+	}
+
+	.phoneFrame {
+		width: 225px;
+	}
+
+	.phoneScreenSlot {
+		top: 11px;
+		left: 12px;
+		width: 201px;
+		height: 437px;
+	}
 
 	.phoneAppIcon {
-		right: -16px;
-		bottom: -8px;
-		width: 104px;
-		height: 104px;
+		right: -14px;
+		bottom: -6px;
+		width: 100px;
+		height: 100px;
+	}
+
+}
+
+@media only screen and (max-width: 375px) {
+
+	.iphonePreview {
+		width: 220px;
+		height: 450px;
+	}
+
+	.phoneFrame {
+		width: 220px;
+	}
+
+	.phoneScreenSlot {
+		top: 11px;
+		left: 12px;
+		width: 196px;
+		height: 427px;
+	}
+
+	.phoneAppIcon {
+		right: -14px;
+		bottom: -6px;
+		width: 96px;
+		height: 96px;
 	}
 
 }
@@ -661,7 +803,7 @@ nav > ul li a:active {
 		flex-grow: 1;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-top: 120px;
+		margin-top: 84px;
 	}
 
 	.feature {
@@ -696,7 +838,7 @@ nav > ul li a:active {
 		flex-grow: 1;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-top: 120px;
+		margin-top: 84px;
 	}
 
 	.feature {

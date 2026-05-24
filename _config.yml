@@ -70,7 +70,7 @@ features                                  :
 # Theme Settings
 topbar_color                              : "#08080A"
 topbar_transparency                       : 0.08
-topbar_title_color                        : "#111111"
+topbar_title_color                        : "#242424"
 
 cover_background_color                    : "#F3F3F6"
 
@@ -80,22 +80,22 @@ device_color                              : black                               
 
 body_background_color                     : "#ffffff"
 
-link_color                                : "#111111"
+link_color                                : "#242424"
 
-app_title_color                           : "#111111"
-app_price_color                           : "#111111"
-app_description_color                     : "#111111"
+app_title_color                           : "#242424"
+app_price_color                           : "#424242"
+app_description_color                     : "#424242"
 
-feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
+feature_title_color                       : "#242424"
+feature_text_color                        : "#616161"
 
-feature_icons_foreground_color            : "#111111"
+feature_icons_foreground_color            : "#242424"
 feature_icons_background_color            : "#F0EEF4"
 
-social_icons_foreground_color             : "#666666"
+social_icons_foreground_color             : "#707070"
 social_icons_background_color             : "#e6e6e6"
 
-footer_text_color                         : "#666666"
+footer_text_color                         : "#707070"
 
 
 
