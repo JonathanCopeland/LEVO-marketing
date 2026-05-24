@@ -20,8 +20,11 @@
                         </svg>
 
                         <div class="phoneScreenSlot">
-                            <div class="videoContainer hidden">
-                                <video class="screenvideo" autoplay muted playsinline preload="auto">
+                            <div class="videoContainer{% unless site.preview_video_path %} hidden{% endunless %}">
+                                <video class="screenvideo" autoplay muted playsinline preload="auto"{% if site.screenshot_path %} poster="{{ site.screenshot_path | relative_url }}"{% endif %}>
+                                    {% if site.preview_video_path %}
+                                        <source src="{{ site.preview_video_path | relative_url }}" type="video/mp4">
+                                    {% endif %}
                                 </video>
                             </div>
 
