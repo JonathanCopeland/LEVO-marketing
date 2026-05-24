@@ -27,8 +27,8 @@
 		const isMobile = window.matchMedia("(max-width: 992px)").matches;
 
 		if (isMobile) {
-			animateIfPresent(".iphonePreview > :not(.phoneAppIcon)", { opacity: 1, y: 0 }, { duration: 0.58, delay: 0.08, ease });
-			animateIfPresent(".phoneAppIcon", { opacity: 1, y: 0, scale: 1 }, { duration: 0.5, delay: 0.2, ease });
+			animateIfPresent(".iphonePreview > :not(.phoneAppIconShadow)", { opacity: 1, y: 0 }, { duration: 0.58, delay: 0.08, ease });
+			animateIfPresent(".phoneAppIconShadow", { opacity: 1, y: 0, scale: 1 }, { duration: 0.5, delay: 0.2, ease });
 		} else {
 			animateIfPresent(".iphonePreview", { opacity: 1, y: 0 }, { duration: 0.58, delay: 0.08, ease });
 		}

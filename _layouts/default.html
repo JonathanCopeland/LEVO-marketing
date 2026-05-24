@@ -30,7 +30,9 @@
 
                         <img class="phoneFrame" src="{{ site.device_image | relative_url }}" alt="" aria-hidden="true">
 
-                        <img class="phoneAppIcon" src="{{ site.app_icon | relative_url }}" alt="" aria-hidden="true">
+                        <span class="phoneAppIconShadow" aria-hidden="true">
+                            <img class="phoneAppIcon" src="{{ site.app_icon | relative_url }}" alt="">
+                        </span>
 
                         {% include screencontent.html %}
 

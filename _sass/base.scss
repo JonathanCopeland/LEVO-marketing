@@ -23,12 +23,12 @@ html {
 		transform: none;
 	}
 
-	.motion-loading .iphonePreview > :not(.phoneAppIcon) {
+	.motion-loading .iphonePreview > :not(.phoneAppIconShadow) {
 		opacity: 0;
 		transform: translateY(14px);
 	}
 
-	.motion-loading .phoneAppIcon {
+	.motion-loading .phoneAppIconShadow {
 		opacity: 0;
 		transform: translateY(10px) scale(0.96);
 	}
