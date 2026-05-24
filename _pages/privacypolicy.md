@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy policy
+nav_title: Privacy Policy
 include_in_header: true
 ---
 
