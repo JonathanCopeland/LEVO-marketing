@@ -24,7 +24,15 @@
 			}
 		};
 
-		animateIfPresent(".iphonePreview", { opacity: 1, y: 0 }, { duration: 0.58, delay: 0.08, ease });
+		const isMobile = window.matchMedia("(max-width: 992px)").matches;
+
+		if (isMobile) {
+			animateIfPresent(".iphonePreview > :not(.phoneAppIcon)", { opacity: 1, y: 0 }, { duration: 0.58, delay: 0.08, ease });
+			animateIfPresent(".phoneAppIcon", { opacity: 1, y: 0, scale: 1 }, { duration: 0.5, delay: 0.2, ease });
+		} else {
+			animateIfPresent(".iphonePreview", { opacity: 1, y: 0 }, { duration: 0.58, delay: 0.08, ease });
+		}
+
 		animateIfPresent(".appInfo > *", { opacity: 1, y: 0 }, { duration: 0.5, delay: stagger(0.06, { startDelay: 0.12 }), ease });
 		animateIfPresent(".feature", { opacity: 1, y: 0 }, { duration: 0.52, delay: stagger(0.045, { startDelay: 0.22 }), ease });
 		animateIfPresent(".markdown-body > *", { opacity: 1, y: 0 }, { duration: 0.42, delay: stagger(0.035, { startDelay: 0.08 }), ease });

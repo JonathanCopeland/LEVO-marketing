@@ -16,6 +16,25 @@ html {
 	transform: translateY(14px);
 }
 
+@media only screen and (max-width: 992px) {
+
+	.motion-loading .iphonePreview {
+		opacity: 1;
+		transform: none;
+	}
+
+	.motion-loading .iphonePreview > :not(.phoneAppIcon) {
+		opacity: 0;
+		transform: translateY(14px);
+	}
+
+	.motion-loading .phoneAppIcon {
+		opacity: 0;
+		transform: translateY(10px) scale(0.96);
+	}
+
+}
+
 .motion-loading .appInfo > *,
 .motion-loading .feature {
 	opacity: 0;

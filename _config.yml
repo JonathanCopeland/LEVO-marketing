@@ -11,6 +11,7 @@ playstore_link                            :
 presskit_download_link                    :
 
 app_icon                                  : assets/appicon.png
+header_icon                               : assets/IconMono.svg
 app_name                                  : "VERSO: Reading Library"
 app_price                                 : Your books, in one place
 app_description                           : See what you're reading now, what's up next, and what you've finished.
