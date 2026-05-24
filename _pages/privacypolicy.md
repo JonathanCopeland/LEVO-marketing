@@ -1,60 +1,82 @@
 ---
 layout: page
-title: Privacy Policy
+title: Privacy policy
 include_in_header: false
 ---
 
+# Privacy policy
+
 **Last updated**  
-August 1 2019
+24 May 2026
 
-# Privacy Policy
-Submissive a when owing much far bawdy thanks impolitely alas overlaid one and this one chuckled darn on more due much misheard amused far far the much purposeful that wildebeest dalmatian and piranha bluebird this and much despite however much sincere nonsensical this paradoxically more.
+## Overview
 
-**Please note:** This is purely a dummy Privacy Policy that serves as an example for how you can use this app landing page generator. Please replace the contents with your own privacy policy.
+This Privacy Policy explains how VERSO handles your information. VERSO stores your reading library on your device and does not collect it on VERSO servers.
 
-<br>
+## Information stored in VERSO
 
-## 1.0 Information We Collect
-Far near but lighted walking far oyster hello kneeled flung and roadrunner and more witless narrowly flexed brokenly blandly much in famous jeez obsessive that.
+### Information you provide
 
-### 1.1 Information from third parties
-- Ouch until smirked some some newt that at frustrating.
-- Nimbly handsomely fabulously python.
-- Alas informally taped when a dear some.
+- Books you add to your library, including titles, authors, covers, reading status, and finish dates
+- App preferences and settings
 
-### 1.2 Information you provide to us 
-Menacingly much walrus far together derisive falcon the toneless unceremoniously yet yikes a hung when because far drooled cast amused naughtily quiet hare a thickly more dogged drank more this dismounted since hence nakedly jeez rolled far gerbil the hey puerilely where vociferously struck insane much twitched instead some beneath then wiped dull snuffed far jeez nightingale bit goodness obscurely quit that much yet nefarious careless some concrete shrewdly gull closed this hugged aboard.
+### Information VERSO does not collect
 
-<br>
+- Personal identification information such as your name, email, or phone number
+- Location data
+- Device contacts, photos, or other personal files
+- Advertising identifiers
+- Analytics or tracking data
 
-## 2.0 What Personal Information we collect about you and how we collect it
-Where cut one reproachful alas ambiguous helpful hen raucous editorial underwrote dubiously therefore this boastfully or possessively oh modest amidst some opposite far wasp grew emu snickered some jeepers and circa much that *equitable* foul camel caudally oh opossum far dear met far much close hello beheld facetious far goodness tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming or well approving sympathetically groundhog mongoose and deeply peaceful wow ouch far regally this and near and badly fatal blunt mischievously and and the blew.
+## How information is used
 
-### 2.1 Third Parties we collect information from
-Various remotely save this querulously explicitly one this and far congenially broad grew said or abhorrently haltered darn beheld panther shrank and one goldfish the more away as much different moth.
+The information you enter is used only to:
 
-| Third Party | What is it used for? |
-| :--- | :--- |
-| Falcon | Tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming. |
-| Eagle | Juggled crud a however overslept vehemently kept indisputably anteater walked alas or into. |
+- Display your reading library
+- Look up book metadata and cover art
+- Generate book recommendations
+- Save your app preferences
 
-<br>
+## Data storage and security
 
-## 3.0 What rights do you, as the data subject, have
-This goodness well well and more cowardly lynx credibly more apart save and less oh examined ouch marginal growled and proper liberally salmon busy some while pointed far because understood.
+**Local storage:** Your library is stored on your device using Apple's SwiftData framework.
 
-1. Boastfully or possessively oh modest amidst.
-2. Far far the much purposeful that wildebeest dalmatian.
-3. Adamant or pushed less far overthrew.
+**iCloud sync:** If iCloud is enabled for your Apple Account, Apple may sync your library across your devices using CloudKit. VERSO cannot access your private iCloud data.
 
-All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+**No VERSO server storage:** Your reading library is not stored on VERSO servers.
 
-<br>
+## Third-party services
 
-## 4.0 How we store and secure the Personal Information we collect
-Worm where gravely behind logically far in tastefully as alas delicately before well darn then far the much pulled red-handed circa much much far pangolin spelled much clung dachshund smirked close some the adamant or pushed less far overthrew in moth begrudging warthog newt pragmatic bent darn and far needlessly notwithstanding angrily as celestially horse rebuking magnanimous dear inscrutably jeepers listless before saucy this much however and wolf dear cringed crab a wanton jeepers flatteringly characteristically a atrocious and returned more lemming robin let some crud that more secure nimble where soundly pitiful because bombastic much.
+VERSO uses Apple services to provide core app features:
 
-<br>
+- **Apple iTunes Search:** Used to look up book metadata and cover art in response to your searches.
+- **StoreKit:** Used to process the optional VERSO Unlimited purchase. Payment information is handled by Apple, not VERSO.
+- **CloudKit:** Used by Apple to sync your local library between your devices when iCloud is enabled.
 
-## 5.0 Information processing and transfers for EEA individuals
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh.
+## Data sharing
+
+VERSO does not sell, trade, or share your personal information with advertisers or data brokers. Your library remains on your device and, if enabled, in your private iCloud account.
+
+## Your rights
+
+You have complete control over your data:
+
+- All local app data can be deleted by removing the app
+- Individual books can be removed within the app
+- No account registration is required
+
+## Children's privacy
+
+VERSO is not intended for children under 13. VERSO does not knowingly collect personal information from children under 13.
+
+## Changes to this policy
+
+This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated revision date.
+
+## Contact
+
+If you have questions about this Privacy Policy, please contact:
+
+- **Email:** hello@jcopeland.co
+- **Developer:** Jonathan Copeland
+- **Location:** Dublin, Ireland

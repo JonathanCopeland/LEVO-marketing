@@ -16,12 +16,16 @@
                             </clipPath>
                         </svg>
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
-                            </video>
-                        </div>  
-                        
-                        <img class="iphoneScreen hidden" src="" alt="">
+                        <div class="phoneScreenSlot">
+                            <div class="videoContainer hidden">
+                                <video class="screenvideo" autoplay="autoplay" controls="controls">
+                                </video>
+                            </div>
+
+                            <img class="iphoneScreen hidden" src="" alt="">
+                        </div>
+
+                        <img class="phoneFrame" src="{{ site.device_image | relative_url }}" alt="" aria-hidden="true">
 
                         {% include screencontent.html %}
 
@@ -35,7 +39,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}">
+                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" alt="{{ site.app_name }} app icon">
                         </div>
                         <div class="appNamePriceContainer">
                             <h1 class="appName">
@@ -52,14 +56,21 @@
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png" alt="Get it on Google Play"></a>
                             {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
+                            {% if site.testflight_link %}
+                                <a class="storeStatus" href="{{site.testflight_link}}">Join TestFlight</a>
+                            {% elsif site.appstore_link or site.ios_app_id %}
+                                <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png" alt="Download on the App Store"></a>
+                            {% else %}
+                                <span class="storeStatus">Coming soon for iPhone</span>
+                            {% endif %}
                         </div>
                     </div>
                     {% include features.html %}
                     {% include footer.html %}
                     {% include appstoreimages.html %}
+                    {% include feathericons.html %}
                 </div>
             </div>
         </div>

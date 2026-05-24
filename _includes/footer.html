@@ -5,73 +5,65 @@
 	<div class="footerIcons">
 
 		{% if site.linkedin_username %}
-			<a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
+			<a class="socialIconLink" href="https://linkedin.com/in/{{ site.linkedin_username }}" aria-label="LinkedIn">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="linkedin" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.linkedin_company %}
-			<a href="https://linkedin.com/company/{{ site.linkedin_company }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
+			<a class="socialIconLink" href="https://linkedin.com/company/{{ site.linkedin_company }}" aria-label="LinkedIn company">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="linkedin" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
+			<a class="socialIconLink" href="https://facebook.com/{{ site.facebook_username }}" aria-label="Facebook">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="facebook" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
+			<a class="socialIconLink" href="https://twitter.com/{{ site.twitter_username }}" aria-label="Twitter">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="twitter" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.instagram_username %}
-			<a href="https://instagram.com/{{ site.instagram_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
+			<a class="socialIconLink" href="https://instagram.com/{{ site.instagram_username }}" aria-label="Instagram">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="instagram" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.mastodon_link %}
-			<a rel="me" href="{{ site.mastodon_link }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-mastodon fa-stack-1x"></i>
+			<a class="socialIconLink" rel="me" href="{{ site.mastodon_link }}" aria-label="Mastodon">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="message-circle" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
+			<a class="socialIconLink" href="https://github.com/{{ site.github_username }}" aria-label="GitHub">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="github" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}
 
 		{% if site.email_address %}
-			<a href="mailto:{{ site.email_address }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
+			<a class="socialIconLink" href="mailto:{{ site.email_address }}" aria-label="Email">
+				<span class="socialIcon" aria-hidden="true">
+					<i data-feather="mail" aria-hidden="true"></i>
 				</span>
 			</a>
 		{% endif %}

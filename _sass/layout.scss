@@ -1,16 +1,6 @@
-.imageWrapper {					// Sets the background image in the header area
+.imageWrapper {					// Sets the background in the header area
 	height: 714px;
-	background: 
-		linear-gradient(
-		rgba($image-overlay-color, $image-overlay-transparency), 
-		rgba($image-overlay-color, $image-overlay-transparency)
-		   ),
-		
-		url($header-image);
-
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top;
+	background-color: $cover-background-color;
 	border-radius: 0px 0px 40px 40px;
 
 }
@@ -374,62 +364,101 @@ nav > ul li a:active {
 	height: 75px;
 }
 
+.storeStatus {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 54px;
+	padding: 0 24px;
+	border: 1px solid rgba(17, 17, 17, 0.18);
+	border-radius: 8px;
+	background-color: rgba(17, 17, 17, 0.04);
+	color: rgba(17, 17, 17, 0.92);
+	font-size: 1.7rem;
+	font-weight: 700;
+	backdrop-filter: blur(16px);
+}
+
+.storeStatus:link,
+.storeStatus:visited,
+.storeStatus:hover,
+.storeStatus:active {
+	color: rgba(17, 17, 17, 0.92);
+	text-decoration: none;
+}
+
 
 
 // iPhone Device Preview
 
 .iphonePreview {
 	grid-area: p;
-	background-image: url($device-color);
-	background-size: 400px auto;
-	background-repeat: no-repeat;
+	position: relative;
+	width: 400px;
+	height: 818px;
 	margin-top: 68px;
 }
 
+.phoneFrame {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	display: block;
+	width: 400px;
+	height: auto;
+	pointer-events: none;
+}
+
+.phoneScreenSlot {
+	position: absolute;
+	top: 20px;
+	left: 21px;
+	z-index: 1;
+	width: 357px;
+	height: 777px;
+	overflow: hidden;
+	-webkit-mask-image: url($device-screen-mask);
+	mask-image: url($device-screen-mask);
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
 .iphoneScreen {
-	width: 349px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .videoContainer {
-	width: 349px;
-	height: 755px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+	width: 100%;
+	height: 100%;
 }
 
 .videoContainer > video {
-	width: 349px;
-	height: 755px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 @media only screen and (max-width: 1070px) {
 
 	.iphonePreview {
-		background-size: 370px auto;
+		width: 370px;
+		height: 756px;
 	}
 
-	.iphoneScreen {
-		width: 322px;
-		margin-left: 24px;
-		margin-top: 22px;
+	.phoneFrame {
+		width: 370px;
 	}
 
-	.videoContainer {
-		width: 322px;
-		height: 698px;
-		margin-left: 24px;
-		margin-top: 22px;
-	}
-	
-	.videoContainer > video {
-		width: 322px;
-		height: 698px;
+	.phoneScreenSlot {
+		top: 19px;
+		left: 20px;
+		width: 331px;
+		height: 719px;
 	}
 	
 } 
@@ -437,33 +466,23 @@ nav > ul li a:active {
 @media only screen and (max-width: 992px) {
 
 	.iphonePreview {
-		display: flex;
-		background-size: 260px auto;
-		background-position: center 0;
+		width: 260px;
+		height: 532px;
 		margin-top: 47px;
-		justify-content: center;
-		padding-bottom: 75px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 75px;
 	}
 
-	.iphoneScreen {
-		width: 226px;
-		height: 488px;
-		-webkit-clip-path: url(#screenMask);
-		clip-path: url(#screenMask);
-		margin: 0px;
-		margin-top: 17px;
+	.phoneFrame {
+		width: 260px;
 	}
 
-	.videoContainer {
-		width: 226px;
-		height: 488px;
-		margin-left: 0px;
-		margin-top: 17px;
-	}
-
-	.videoContainer > video {
-		width: 226px;
-		height: 488px;
+	.phoneScreenSlot {
+		top: 13px;
+		left: 14px;
+		width: 232px;
+		height: 505px;
 	}
 	
 } 
@@ -502,20 +521,44 @@ nav > ul li a:active {
 	padding-left: 0px;
 }
 
-.iconBack {
-	color: $feature-icons-background-color;
+.featureIcon,
+.socialIcon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
 }
 
-.iconTop {
+.featureIcon {
+	width: 44px;
+	height: 44px;
+	background-color: $feature-icons-background-color;
 	color: $feature-icons-foreground-color;
 }
 
-.socialIconBack {
-	color: $social-icons-background-color;
+.featureIcon .feather {
+	width: 22px;
+	height: 22px;
+	stroke-width: 2.1;
 }
 
-.socialIconTop {
+.socialIconLink:link,
+.socialIconLink:visited,
+.socialIconLink:hover,
+.socialIconLink:active {
 	color: $social-icons-foreground-color;
+}
+
+.socialIcon {
+	width: 38px;
+	height: 38px;
+	background-color: $social-icons-background-color;
+}
+
+.socialIcon .feather {
+	width: 18px;
+	height: 18px;
+	stroke-width: 2.1;
 }
 
 .featureText {
@@ -628,6 +671,7 @@ footer {
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
+	gap: 12px;
 }
 
 .footerLinks {
