@@ -1,20 +1,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-{% if site.preview_video_path %}
-    <script>
-        $(function() {
-            $(".iphoneScreen").addClass("hidden");
-            $(".videoContainer").removeClass("hidden");
-            $(".screenvideo").append('<source src="{{ site.preview_video_path | relative_url }}" type="video/mp4">');
-        });
-    </script>
-{% elsif site.screenshot_path %}
-    <script>
-        $(function() {
-            $(".iphoneScreen")
+<script>
+    $(function() {
+        var $image = $(".iphoneScreen");
+        var $videoContainer = $(".videoContainer");
+        var $video = $(".screenvideo");
+        var video = $video.get(0);
+
+        {% if site.screenshot_path %}
+            $image
                 .attr("src", "{{ site.screenshot_path | relative_url }}")
                 .attr("alt", "VERSO app preview")
                 .removeClass("hidden");
-        });
-    </script>
-{% endif %}
+        {% endif %}
+
+        {% if site.preview_video_path %}
+            var showStaticPreview = function() {
+                $videoContainer.addClass("hidden");
+            };
+
+            $video.append('<source src="{{ site.preview_video_path | relative_url }}" type="video/mp4">');
+            video.addEventListener("ended", showStaticPreview, { once: true });
+            video.addEventListener("error", showStaticPreview, { once: true });
+            video.addEventListener("canplay", function() {
+                $videoContainer.removeClass("hidden");
+            }, { once: true });
+            video.load();
+
+            var playPromise = video.play();
+            if (playPromise) {
+                playPromise.catch(showStaticPreview);
+            }
+        {% endif %}
+    });
+</script>

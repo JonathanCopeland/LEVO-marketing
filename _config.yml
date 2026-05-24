@@ -15,7 +15,8 @@ header_icon                               : assets/IconMono.svg
 app_name                                  : "VERSO: Reading Library"
 app_price                                 : Your books, in one place
 app_description                           : See what you're reading now, what's up next, and what you've finished.
-screenshot_path                           : "assets/Simulator Screenshot - iPhone 17 Pro - 2026-05-24 at 17.45.27.png"
+preview_video_path                        : assets/videos/Video.mp4
+screenshot_path                           : assets/screenshot/Static.png
 
 enable_smart_app_banner                   : false
 
