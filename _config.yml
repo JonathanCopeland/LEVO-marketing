@@ -11,7 +11,7 @@ playstore_link                            :
 presskit_download_link                    :
 
 app_icon                                  : assets/appicon.png
-header_icon                               : assets/IconMono.svg
+header_icon                               : assets/iconClear.svg
 app_name                                  : "LEVO"
 app_price                                 : Your games, in one place
 app_description                           : See what you're playing now, what's up next, and what you've finished.
