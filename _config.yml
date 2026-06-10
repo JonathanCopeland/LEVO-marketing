@@ -1,5 +1,5 @@
 #page title
-page_title                                : "VERSO: Reading Library - Your books, in one place"
+page_title                                : "LEVO - Your games, in one place"
 
 # App Info
 ios_app_id                                :
@@ -12,9 +12,9 @@ presskit_download_link                    :
 
 app_icon                                  : assets/appicon.png
 header_icon                               : assets/IconMono.svg
-app_name                                  : "VERSO: Reading Library"
-app_price                                 : Your books, in one place
-app_description                           : See what you're reading now, what's up next, and what you've finished.
+app_name                                  : "LEVO"
+app_price                                 : Your games, in one place
+app_description                           : See what you're playing now, what's up next, and what you've finished.
 preview_video_path                        : assets/videos/Video.mp4
 screenshot_path                           : assets/screenshot/Static.png
 
@@ -42,28 +42,28 @@ mastodon_link                             :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Reading, Up next, Finished
-    description                           : Keep the books you're reading, saving for later, and already finished in one library.
-    feather_icon_name                     : book-open
+  - title                                 : Playing, Up next, Finished
+    description                           : Keep the games you're playing, saving for later, and already finished in one library.
+    feather_icon_name                     : play-circle
 
-  - title                                 : Plan your next read
-    description                           : Choose what you want to read next and keep it easy to find in Up next.
+  - title                                 : Plan your next play
+    description                           : Choose what you want to play next and keep it easy to find in Up next.
     feather_icon_name                     : bookmark
 
-  - title                                 : See your reading habits
-    description                           : Scroll through finished books by month and see how your reading changes over time.
+  - title                                 : See your finish timeline
+    description                           : Scroll through finished games by month and see how your playing changes over time.
     feather_icon_name                     : bar-chart-2
 
   - title                                 : Organize your library visually
     description                           : Sort covers by color when you want your library to feel easier to browse.
     feather_icon_name                     : droplet
 
-  - title                                 : Share your year in books
-    description                           : Export a clean image that shows the books you finished this year.
+  - title                                 : Share your year in games
+    description                           : Export a clean image that shows the games you finished this year.
     feather_icon_name                     : image
 
   - title                                 : Home screen widgets
-    description                           : Keep Up next on your home screen, or pin one featured book.
+    description                           : Keep Up next on your home screen, or pin one featured game.
     feather_icon_name                     : layout
 
 

@@ -1,6 +1,6 @@
-# VERSO Marketing Site
+# LEVO Marketing Site
 
-Jekyll marketing site for VERSO: Reading Library, an iPhone app for tracking books you are reading, saving for later, and finished.
+Jekyll marketing site for LEVO, an iPhone app for tracking the games you are playing, saving for later, and finished.
 
 ## Local Preview
 
@@ -42,7 +42,7 @@ A useful first press kit should include:
 Suggested path:
 
 ```yml
-presskit_download_link: assets/presskit/VERSO-press-kit.zip
+presskit_download_link: assets/presskit/LEVO-press-kit.zip
 ```
 
 ## Credits

@@ -8,14 +8,14 @@ include_in_header: true
 
 ## Version 1.0
 
-VERSO starts with one library for the books you're reading, saving for later, and already finished.
+LEVO starts with one library for the games you're playing, saving for later, and already finished.
 
 ### Included
 
-- Reading, Up next, and Finished shelves
-- Apple Books search with artwork and metadata
+- Playing, Up next, and Finished collections
+- IGDB game search with cover art and metadata
 - Month-by-month finish timeline
-- Shareable year-in-books cards
-- On-device recommendations that filter out books already in your library
-- Home screen widgets for library covers and featured books
-- VERSO Unlimited as a one-time purchase after the first 3 free books
+- Shareable year-in-games cards
+- On-device recommendations that filter out games already in your library
+- Home screen widgets for library covers and pinned games
+- LEVO Unlimited as a one-time purchase after the first 3 free games
